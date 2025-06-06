@@ -1,8 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiMail } from 'react-icons/hi'
-import { FaTrophy } from 'react-icons/fa'
 
 const About: React.FC = () => {
   return (
