@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
 
 interface FormData {
@@ -157,6 +157,15 @@ const Contact: React.FC = () => {
                     <FaLinkedin size={24} />
                     <span>linkedin.com/in/omnateeta-v-unnimath</span>
                   </a>
+                  <a
+                    href="https://www.youtube.com/@Mr.omnateeta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 text-gray-600 dark:text-textSecondary hover:text-secondary dark:hover:text-secondary transition-colors"
+                  >
+                    <FaYoutube size={24} />
+                    <span>youtube.com/@Mr.omnateeta</span>
+                  </a>
                 </div>
               </div>
 
@@ -184,6 +193,14 @@ const Contact: React.FC = () => {
                     className="p-3 bg-gray-100 dark:bg-primary/50 rounded-full text-gray-600 dark:text-textSecondary hover:text-secondary dark:hover:text-secondary transition-colors"
                   >
                     <FaLinkedin size={24} />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@Mr.omnateeta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-gray-100 dark:bg-primary/50 rounded-full text-gray-600 dark:text-textSecondary hover:text-secondary dark:hover:text-secondary transition-colors"
+                  >
+                    <FaYoutube size={24} />
                   </a>
                   <a
                     href="mailto:omnateeta3@gmail.com"

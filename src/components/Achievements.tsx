@@ -7,6 +7,7 @@ interface Achievement {
   description: string
   icon: React.ReactNode
   year: string
+  borderColor: string
 }
 
 const achievements: Achievement[] = [
@@ -15,18 +16,21 @@ const achievements: Achievement[] = [
     description: 'Maintaining a strong academic record in Computer Science Engineering',
     icon: <FaGraduationCap />,
     year: '2025',
+    borderColor: 'border-blue-500 dark:border-blue-400'
   },
   {
     title: 'Web Development Projects',
     description: 'Successfully developed and deployed multiple full-stack web applications',
     icon: <FaCode />,
     year: '2025',
+    borderColor: 'border-green-500 dark:border-green-400'
   },
   {
     title: 'Problem Solving Skills',
     description: 'Consistently solving complex programming challenges and participating in coding competitions',
     icon: <FaAward />,
     year: '2025',
+    borderColor: 'border-yellow-500 dark:border-yellow-400'
   },
 ]
 
@@ -51,8 +55,8 @@ const Achievements: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                whileHover={{ scale: 1.05, y: -5 }}
+                className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 ${achievement.borderColor}`}
               >
                 <div className="flex items-center justify-center mb-4">
                   <div className="text-4xl text-blue-500 dark:text-blue-400">

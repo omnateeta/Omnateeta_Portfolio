@@ -19,7 +19,7 @@ const projects: Project[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     githubUrl: 'https://github.com/omnateeta/ecommerce-frontend',
     liveUrl: 'https://ecommercefrontend-ten-ochre.vercel.app/',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=E-Commerce+Project',
+    image: 'https://wrapmarketusercontent.com/assets/items/full/51640ed9da138acbe4942c89a307dd485b550d6869391cd26c20771f3a3d336e.webp?v=1717673444',
     color: 'from-blue-500 to-blue-600',
   },
   {
@@ -28,7 +28,7 @@ const projects: Project[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     githubUrl: 'https://github.com/omnateeta/online-quiz-portal',
     liveUrl: 'https://online-quiz-portal-wine.vercel.app/',
-    image: 'https://placehold.co/600x400/7c3aed/ffffff?text=Quiz+Portal',
+    image: 'https://img.freepik.com/free-vector/quiz-word-concept_23-2147844150.jpg',
     color: 'from-purple-500 to-purple-600',
   },
 ]
@@ -62,6 +62,10 @@ const Projects: React.FC = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = `https://placehold.co/600x400/2563eb/ffffff?text=${project.title}`;
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>

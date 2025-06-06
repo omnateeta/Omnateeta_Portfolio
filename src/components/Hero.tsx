@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 const Hero: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
               I build modern, responsive, and user-friendly web applications with a focus on performance and accessibility.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 -mb-8">
               <a
                 href="https://github.com/omnateeta"
                 target="_blank"
@@ -54,6 +54,15 @@ const Hero: React.FC = () => {
               >
                 <FaLinkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://www.youtube.com/@Mr.omnateeta"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
+                <FaYoutube className="w-6 h-6" />
+                <span>YouTube</span>
               </a>
             </div>
           </motion.div>

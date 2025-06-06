@@ -6,6 +6,7 @@ import {
   FaPython,
   FaJava,
   FaDatabase,
+  FaTrophy,
 } from 'react-icons/fa'
 import {
   SiTypescript,
@@ -77,7 +78,7 @@ const skills: Skill[] = [
     icon: <SiTailwindcss />, 
     level: 90, 
     color: 'from-cyan-400 to-cyan-500',
-    image: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg'
+    image: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
   },
   { 
     name: 'SQL', 
@@ -138,6 +139,39 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </motion.div>
+      </div>
+      
+      <div className="mt-20 p-8 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-lg shadow-inner">
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          Achievements
+        </h3>
+        <div className="space-y-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border-2 border-yellow-500 dark:border-yellow-400 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0">
+                <FaTrophy className="w-8 h-8 text-yellow-500" />
+              </div>
+              <div>
+                <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                  National Level Hackathon Winner
+                </h4>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Won 1st place in Web Development domain at AGMRCET Varur's 12-hour hackathon
+                </p>
+                <p className="text-gray-500 dark:text-gray-500 mt-2">
+                  Cash Prize: ₹15,000
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <img
+                src="/images/winner.jpg"
+                alt="Hackathon Winner"
+                className="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
