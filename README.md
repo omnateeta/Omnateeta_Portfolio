@@ -49,4 +49,5 @@ npm run dev
 - 🛠️ Skills display
 - 📬 Contact form
 - 🏆 Achievements section
-- 
+
+-------------------------------------
